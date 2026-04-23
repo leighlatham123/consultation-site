@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leigh Latham | AWS Security, Automation and Optimisation Consulting</title>
+    <meta name="description"
+        content="AWS cost optimisation, IAM and security hardening, automation, and internal tools for businesses." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="#top">Leigh Latham</a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="site-menu" class="nav-links" aria-label="Primary navigation">
+                <a href="#results">Results</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="hero section section-block section-hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">AWS, security, automation, optimisation</p>
+                    <h1>Reduce AWS costs, improve security, &amp; eliminate manual work.</h1>
+                    <p class="lead">
+                        I help teams cut cloud spend, harden security posture, and replace
+                        repetitive operational tasks with simple, cost-effective, and reliable automations.
+                    </p>
+                    <p class="subtle">
+                        Over 10 years experience across AWS, Networks, DevOps, and security.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contact">Get in touch</a>
+                        <a class="button button-secondary" href="#results">View results</a>
+                    </div>
+                </div>
+
+                <aside class="hero-panel" aria-label="Summary of services">
+                    <h2>Typical outcomes</h2>
+                    <ul class="simple-list">
+                        <li>20-60% AWS cost reduction identified &amp; delivered</li>
+                        <li>IAM risk &amp; over-permissioning reduced</li>
+                        <li>Manual processes replaced with automation</li>
+                        <li>Clear, centralised system visibility</li>
+                        <li>Measurable ROI within weeks of implementation</li>
+                        <li>Less firefighting, more predictable operations</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+
+        <section id="results" class="section section-block section-results">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Results</h2>
+                    <p>
+                        Legitimate, measurable improvements across cost, security, and operational efficiency.
+                    </p>
+                </div>
+
+                <div class="results-grid">
+
+                    <article class="result-box">
+                        <h3>Cost Reduction</h3>
+                        <p>
+                            Reduced monthly AWS costs from <b>~$1,600</b> to <b>~$700</b>
+                            through targeted cleanup and right-sizing.
+                        </p>
+
+                        <div class="result-image-wrap proof-box">
+                            <a href="assets/images/cost_reduction_graph.PNG" target="_blank">
+                                <img src="assets/images/cost_reduction_graph.PNG" alt="AWS cost reduction over time"
+                                    class="result-graph" /></a>
+                        </div>
+
+                        <h4>Key actions:</h4>
+                        <ul class="simple-list reveal-on-scroll">
+                            <li>Removed unused &amp; orphaned resources</li>
+                            <li>Right-sized over-provisioned services</li>
+                            <li>Implemented cost-saving automation</li>
+                        </ul>
+                    </article>
+
+                    <article class="result-box">
+                        <hr>
+                        <h3>Security Hardening</h3>
+                        <p>
+                            Reduced malicious scan traffic by <b>~95%</b>, from
+                            <b>~100k+</b> to <b>~4k+</b> requests per hour,
+                            using a combination of WAF-tuning and ALB rule optimisation.
+                        </p>
+
+                        <div class="result-compare">
+                            <div class="result-compare-item">
+                                <div class="result-compare-label">Before</div>
+                                <div class="result-image-wrap proof-box">
+                                    <div class="result-stat-badge">~100k+ req/hr</div>
+                                    <a href="assets/images/results_before_zoom.JPG" target="" _blank>
+                                        <img src="assets/images/results_before_zoom.jpg"
+                                            alt="High volume malicious traffic before WAF tuning" class="result-icon" />
+                                    </a>
+                                    <img src="assets/images/results_before_zoomed.png"
+                                        class="floating-zoom zoom-before" />
+                                </div>
+                            </div>
+
+                            <div class="result-compare-item">
+                                <div class="result-compare-label">After</div>
+                                <div class="result-image-wrap proof-box">
+                                    <div class="result-stat-badge">~4k+ req/hr</div>
+                                    <a href="assets/images/results_after_zoom.jpg" target="_blank">
+                                        <img src="assets/images/results_after_zoom.jpg"
+                                            alt="Reduced malicious traffic after WAF and ALB optimisation"
+                                            class="result-icon" />
+                                    </a>
+                                    <img src="assets/images/results_after_zoomed.png"
+                                        class="floating-zoom zoom-after" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>Key actions:</h4>
+                        <ul class="simple-list reveal-on-scroll">
+                            <li>Introduced &amp; tuned AWS WAF managed &amp; custom rules</li>
+                            <li>Added explicit ALB listener rules to block automated scan attempts</li>
+                            <li>Filtered noisy/bot traffic before reaching services</li>
+                        </ul>
+                    </article>
+
+                    <article class="result-box ops-result-box">
+                        <hr>
+                        <div class="ops-layout">
+                            <div class="ops-copy">
+                                <div class="ops-container">
+                                    <h3>Operational Efficiency</h3>
+                                    <p>
+                                        Replaced manual onboarding, reporting, and cloud operations with automation and
+                                        internal tools,
+                                        reducing repetitive work and improving consistency.
+                                    </p>
+                                </div>
+
+                                <div class="ops-container">
+                                    <h4>Impact:</h4>
+                                    <ul class="simple-list reveal-on-scroll">
+                                        <li>Hours of manual work eliminated each week</li>
+                                        <li>Reduced human error in access &amp; provisioning</li>
+                                        <li>Faster onboarding &amp; operational turnaround</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="ops-compare">
+                                <div class="ops-column ops-before">
+                                    <span class="ops-pill ops-pill-before">Before</span>
+                                    <h4>Reactive &amp; Fragmented</h4>
+                                    <ul class="ops-list ops-list-negative">
+                                        <li>Manual user creation across multiple systems</li>
+                                        <li>Spreadsheets for tracking &amp; reporting</li>
+                                        <li>Inconsistent processes &amp; access handling</li>
+                                        <li>Time-consuming approvals &amp; provisioning</li>
+                                        <li>Higher risk of human error</li>
+                                    </ul>
+                                </div>
+
+                                <div class="ops-divider">
+                                    <span class="ops-arrow"></span>
+                                </div>
+
+                                <div class="ops-column ops-after">
+                                    <span class="ops-pill ops-pill-after">After</span>
+                                    <h4>Automated &amp; Streamlined</h4>
+                                    <ul class="ops-list ops-list-positive">
+                                        <li>Centralised reporting &amp; dashboards</li>
+                                        <li>Automated on/off-boarding</li>
+                                        <li>Consistent roles &amp; permissions</li>
+                                        <li>Faster approvals &amp; provisioning</li>
+                                        <li>Reduced errors &amp; operational risk</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="ops-metrics-strip proof-box">
+                                <div class="ops-metric-item">
+                                    <div class="ops-metric-icon ops-clock"></div>
+                                    <div class="ops-metric-copy">
+                                        <h4>Time saved</h4>
+                                        <p>Repetitive tasks automated or removed.</p>
+                                    </div>
+                                </div>
+
+                                <div class="ops-metric-item">
+                                    <div class="ops-metric-icon ops-shield"></div>
+                                    <div class="ops-metric-copy">
+                                        <h4>Reduced errors</h4>
+                                        <p>Consistent processes reduce mistakes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="ops-metric-item">
+                                    <div class="ops-metric-icon ops-bolt"></div>
+                                    <div class="ops-metric-copy">
+                                        <h4>Faster turnaround</h4>
+                                        <p>Onboarding and ops completed faster.</p>
+                                    </div>
+                                </div>
+
+                                <div class="ops-metric-item">
+                                    <div class="ops-metric-icon ops-bars"></div>
+                                    <div class="ops-metric-copy">
+                                        <h4>Clear visibility</h4>
+                                        <p>Improved reporting and operational insight.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="services" class="section section-block section-services">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Services</h2>
+                    <p>
+                        Targeted, cost-effective services designed to reduce risk, remove waste, and simplify
+                        operations.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="card card-warm">
+                        <div>
+                            <div class="card-icon">01</div>
+                            <h3>AWS Cost &amp; Security Audit</h3>
+                            <p>
+                                Short, fixed-scope review aimed at identifying waste, overly-permissive policies, and
+                                high-impact fixes.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>Improve cost visibility &amp; monitoring</li>
+                                <li>Identify saving opportunities</li>
+                                <li>IAM &amp; access risk review</li>
+                                <li>Exposure &amp; misconfiguration checks</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">5-7 days</span>
+                    </article>
+
+                    <article class="card card-cool">
+                        <div>
+                            <div class="card-icon">02</div>
+                            <h3>Optimisation Implementation</h3>
+                            <p>
+                                Delivery-focused solutions for the issues worth solving properly.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>Resource cleanup &amp; right-sizing</li>
+                                <li>IAM hardening &amp; access reduction</li>
+                                <li>Practical security improvements with tangible results</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">Fixed scope</span>
+                    </article>
+
+                    <article class="card card-cream">
+                        <div>
+                            <div class="card-icon">03</div>
+                            <h3>User Management Automation</h3>
+                            <p>
+                                Replace repetitive user on/off-boarding processes with reliable workflows.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>User creation &amp; role assignment</li>
+                                <li>Email &amp; access workflow automation</li>
+                                <li>Audit trail &amp; repeatability</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">1-2 weeks</span>
+                    </article>
+
+                    <article class="card card-lilac">
+                        <div>
+                            <div class="card-icon">04</div>
+                            <h3>Internal Dashboards</h3>
+                            <p>
+                                Replace spreadsheets &amp; external solutions with simple, AWS-native tools that provide
+                                operational clarity.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>API &amp; data source integration</li>
+                                <li>Business-friendly UI</li>
+                                <li>Centralised reporting</li>
+                                <li>Exportable reports</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">Project-based</span>
+                    </article>
+
+                    <article class="card card-green">
+                        <div>
+                            <div class="card-icon">05</div>
+                            <h3>AWS Automation</h3>
+                            <p>
+                                Small automations that reduce manual cloud admin and improve consistency.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>Cleanup routines &amp; lifecycle controls</li>
+                                <li>Spending alerts &amp; checks</li>
+                                <li>Lambda-based tasks</li>
+                                <li>Event-based triggered actions</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">Custom build</span>
+                    </article>
+
+                    <article class="card card-rose">
+                        <div>
+                            <div class="card-icon">06</div>
+                            <h3>Advisory &amp; Troubleshooting</h3>
+                            <p>
+                                Hands-on help for environments, integration issues, or uncertainty.
+                            </p>
+                            <ul class="card-list reveal-on-scroll">
+                                <li>Technical deep-dives</li>
+                                <li>Clear, actionable improvement plans</li>
+                                <li>SSO migration / integration</li>
+                                <li>Implementation-focused advice</li>
+                            </ul>
+                        </div>
+                        <span class="card-tag">On demand</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="approach" class="section section-block section-approach">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Approach</h2>
+                    <p>
+                        Focus on practical improvements that deliver measurable results without adding unnecessary
+                        complexity.
+                    </p>
+                </div>
+
+                <div class="quote-rotator" aria-live="polite">
+                    <div class="quote-rotator-container proof-box">
+                        <div class=" quote-rotator-card" tabindex="0" aria-label="Rotating industry quote">
+                            <span class="quote-rotator-mark-left">“</span>
+                            <blockquote id="rotating-quote-text" class="quote-rotator-text"></blockquote>
+                            <span class="quote-rotator-mark-right">”</span>
+                        </div>
+                        <span id="rotating-quote-source" class="quote-rotator-source"></span>
+                    </div>
+                </div>
+
+                <div class="proof-grid">
+                    <article class="proof-box">
+                        <h4>Focus on these:</h4>
+                        <ul class="simple-list reveal-on-scroll">
+                            <li>Reducing AWS waste &amp; spend</li>
+                            <li>Improving IAM &amp; security posture</li>
+                            <li>Removing repetitive operational work</li>
+                            <li>Delivering changes, not lengthy reports</li>
+                        </ul>
+                    </article>
+
+                    <article class="proof-box">
+                        <h4>By doing these:</h4>
+                        <ul class="simple-list reveal-on-scroll">
+                            <li>Defining a clear scope before work begins</li>
+                            <li>Setting short & focused changes</li>
+                            <li>Prioritising high-impact improvements</li>
+                            <li>Performing safe, incremental modifications</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section contact-section section-block section-contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div>
+                        <h2>Make the next problem smaller.</h2>
+                        <p>
+                            Send me your approximate AWS monthly spend, a brief description of your cloud usage, or a
+                            short description
+                            of the processes you wish were automated, and I'll tell you whether it
+                            looks worth doing.
+                        </p>
+                    </div>
+
+                    <div class=" contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label label-linkedin">LinkedIn</span>
+                            <a href="https://linkedin.com/in/leigh-latham/"
+                                target="_blank">linkedin.com/in/leighlatham</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label label-email">Email</span>
+                            <a href="mailto:leigh@leighlatham.dev">leigh@leighlatham.dev</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label label-github">GitHub</span>
+                            <a href="https://github.com/leighlatham123" target="_blank">github.com/leighlatham123</a>
+                        </div>
+
+
+
+                        <div class="contact-item">
+                            <span class="contact-label label-location">Location</span>
+                            <span>United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#top">Back to top</a>
+        </div>
+
+        <div class="container footer-outer">
+            <div class="footer-left">
+                <span id="footer-year"></span> Leigh Latham
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
