@@ -990,6 +990,19 @@ main {
 
 /* Begin scroll reveal */
 
+/* Begin hero-element scroll-reveal overrides */
+.hero,
+.hero-copy,
+.hero-copy h1,
+.hero-copy .lead,
+.hero-actions {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* End hero-element scroll-reveal overrides */
+
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(28px);
