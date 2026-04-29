@@ -30,8 +30,7 @@
   --section-approach: rgb(143, 168, 194);
   --section-contact: rgb(239, 240, 243);
   --font-primary: Helvetica Neue, Helvetica, Arial, sans-serif;
-  --font-secondary: "Libre Baskerville", serif;
-  --font-tertiary: "Noto Sans", sans-serif;
+  --font-secondary: "Noto Sans", sans-serif;
 }
 
 * {
@@ -58,7 +57,9 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
+  object-fit: contain;
 }
 
 hr {
@@ -167,7 +168,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-tertiary);
+  font-family: var(--font-secondary);
 }
 
 nav,
@@ -545,7 +546,7 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-family: var(--font-tertiary)
+  font-family: var(--font-secondary)
 }
 
 .footer-left,
@@ -706,7 +707,7 @@ h4 {
   font-weight: 600;
   max-width: 900px;
   text-align: left;
-  font-family: var(--font-tertiary)
+  font-family: var(--font-secondary)
 }
 
 .quote-rotator-source {
