@@ -10,13 +10,13 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MF6XHFK8XJ"></script>
-    <script>
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-MF6XHFK8XJ');
-    </script>
+    </script> -->
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -494,6 +494,36 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        window.addEventListener("load", () => {
+            const loadAnalytics = () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    window.dataLayer.push(arguments);
+                }
+
+                window.gtag = gtag;
+
+                const script = document.createElement("script");
+                script.async = true;
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-MF6XHFK8XJ";
+
+                script.onload = () => {
+                    gtag("js", new Date());
+                    gtag("config", "G-MF6XHFK8XJ");
+                };
+
+                document.head.appendChild(script);
+            };
+
+            if ("requestIdleCallback" in window) {
+                window.requestIdleCallback(loadAnalytics, { timeout: 3000 });
+            } else {
+                window.setTimeout(loadAnalytics, 3000);
+            }
+        });
+    </script>
 </body>
 
 </html>
