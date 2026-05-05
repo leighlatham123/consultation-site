@@ -120,6 +120,8 @@ hr {
   color: var(--text-light);
 }
 
+
+
 .nav {
   display: flex;
   align-items: center;
@@ -136,6 +138,18 @@ hr {
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row;
+}
+
+.brand-logo {
+  height: auto;
+  width: 75px;
+}
+
+.brand-text {
+  height: auto;
+  width: 200px;
 }
 
 .nav-toggle {
@@ -576,10 +590,22 @@ h4 {
 .footer-left,
 .footer-right {
   font-size: 0.65rem;
-  color: var(--text-light)
+  color: var(--text-light);
+  position: relative;
 }
 
-.footer-left::before {
+.footer-year {
+  padding-left: 8px;
+}
+
+.footer-year::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.footer-year::before {
   content: '';
   height: 0.65rem;
   width: 0.65rem;
@@ -1511,6 +1537,16 @@ main {
   .nav-links a:hover,
   .nav-links a:focus-visible {
     color: var(--text-light)
+  }
+
+  .brand-logo {
+    height: auto;
+    width: 55px;
+  }
+
+  .brand-text {
+    height: auto;
+    width: 150px;
   }
 
   body.menu-open {
