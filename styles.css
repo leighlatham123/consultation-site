@@ -147,6 +147,10 @@ hr {
   width: 75px;
 }
 
+.brand-logo-nav {
+  display: none;
+}
+
 .brand-text {
   height: auto;
   width: 200px;
@@ -1526,6 +1530,13 @@ main {
       visibility 0s linear 0s;
   }
 
+  .nav-links.is-open .brand-logo-nav {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
   .nav-links a {
     color: var(--text-dark);
     font-size: 2rem;
@@ -1544,10 +1555,10 @@ main {
     width: 55px;
   }
 
-  .brand-logo-nav {
+  /* .brand-logo-nav {
     height: auto;
     width: 150px;
-  }
+  } */
 
   .brand-text {
     height: auto;

@@ -4,9 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const navToggle = document.querySelector(".nav-toggle");
     const navMenu = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links a");
+    const navLogos = document.querySelectorAll(".nav-links img");
     const body = document.body;
 
     if (!navToggle || !navMenu) return;
+
+    function setLogoVisibility(isVisible) {
+        navLogos.forEach((logo) => {
+            logo.hidden = !isVisible;
+            logo.setAttribute("aria-hidden", String(!isVisible));
+        });
+    }
 
     function openMenu() {
         navMenu.classList.add("is-open");
@@ -14,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navToggle.setAttribute("aria-expanded", "true");
         navToggle.setAttribute("aria-label", "Close menu");
         body.classList.add("menu-open");
+        setLogoVisibility(true);
     }
 
     function closeMenu() {
@@ -22,10 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
         navToggle.setAttribute("aria-expanded", "false");
         navToggle.setAttribute("aria-label", "Open menu");
         body.classList.remove("menu-open");
+        setLogoVisibility(false);
     }
+
+    closeMenu();
 
     navToggle.addEventListener("click", () => {
         const isOpen = navMenu.classList.contains("is-open");
+
         if (isOpen) {
             closeMenu();
         } else {
