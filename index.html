@@ -22,9 +22,18 @@
 <body>
     <header class="site-header">
         <div class="container nav">
-            <a class="brand" href="#top">
-                <img src="assets/images/cloudy_transparent.png" class="brand-logo">
-                <img src="assets/images/logo_text.png" class="brand-text">
+            <a class="brand" href="#top" aria-label="Cloud Cost Cap home">
+                <img src="assets/images/cloudy_transparent-96.webp" srcset="
+            assets/images/cloudy_transparent-96.webp 96w,
+            assets/images/cloudy_transparent-192.webp 192w
+        " sizes="55px" width="55" height="55" class="brand-logo" alt="Cloud Cost Cap Logo" aria-hidden="true"
+                    decoding="async">
+
+                <img src="assets/images/logo_text-300.webp" srcset="
+            assets/images/logo_text-300.webp 300w,
+            assets/images/logo_text-600.webp 600w
+        " sizes="150px" width="150" height="55" class="brand-text" alt="Cloud Cost Cap brand text" aria-hidden="true"
+                    decoding="async">
             </a>
 
             <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
@@ -34,7 +43,8 @@
             </button>
 
             <nav id="site-menu" class="nav-links" aria-label="Primary navigation">
-                <img src="assets/images/logo_round.png" class="brand-logo-nav" alt="CloudCostCap logo">
+                <img src="assets/images/logo_round.png" class="brand-logo-nav" alt="CloudCostCap logo"
+                    alt="Cloud Cost Cap Logo">
 
                 <a href="#results">Results</a>
                 <a href="#services">Services</a>
