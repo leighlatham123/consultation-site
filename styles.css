@@ -1544,6 +1544,11 @@ main {
     width: 55px;
   }
 
+  .brand-logo-nav {
+    height: auto;
+    width: 150px;
+  }
+
   .brand-text {
     height: auto;
     width: 150px;
