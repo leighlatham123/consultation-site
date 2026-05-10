@@ -881,56 +881,6 @@ main {
 
 /* Begin responsive styles */
 
-@media (max-width: 720px) {
-  .quote-rotator-card {
-    padding: 30px 20px 20px 52px;
-    min-height: 160px;
-  }
-
-  .quote-rotator-mark {
-    top: 16px;
-    left: 18px;
-    font-size: 2.8rem;
-  }
-
-  .quote-rotator-text {
-    font-size: 1.02rem;
-  }
-
-  .quote-rotator-source {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 720px) {
-  .quote-rotator-card {
-    padding: 22px;
-    min-height: 160px;
-  }
-
-  .quote-rotator-mark {
-    font-size: 2.6rem;
-  }
-
-  .quote-rotator-text {
-    font-size: 1.02rem;
-  }
-
-  .quote-rotator-source {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 720px) {
-  .result-compare {
-    grid-template-columns: 1fr;
-  }
-
-  .result-icon {
-    height: 240px;
-  }
-}
-
 @media (max-width: 980px) {
 
   .hero-grid,
@@ -950,6 +900,29 @@ main {
 }
 
 @media (max-width: 720px) {
+  .quote-rotator-mark {
+    top: 16px;
+    left: 18px;
+    font-size: 2.8rem;
+  }
+
+  .quote-rotator-text {
+    font-size: 1.02rem;
+  }
+
+  .quote-rotator-card {
+    padding: 22px;
+    min-height: 160px;
+  }
+
+  .result-compare {
+    grid-template-columns: 1fr;
+  }
+
+  .result-icon {
+    height: 240px;
+  }
+
   .container {
     width: min(100% - 24px, var(--container-width));
   }
@@ -1001,7 +974,6 @@ main {
     line-height: 1.5rem;
   }
 
-
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -1013,18 +985,15 @@ main {
 
   .quote-rotator-source {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--muted);
     font-style: italic;
   }
 
   .quote-rotator-text {
     margin: 10px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
-}
-
-@media (max-width: 720px) {
 
   .section-results::before,
   .section-services::before,
@@ -1557,11 +1526,6 @@ main {
     height: auto;
     width: 55px;
   }
-
-  /* .brand-logo-nav {
-    height: auto;
-    width: 150px;
-  } */
 
   .brand-text {
     height: auto;

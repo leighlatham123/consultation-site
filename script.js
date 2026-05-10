@@ -75,7 +75,7 @@ const quoteCardEl = document.querySelector(".quote-rotator-card");
 
 const rotatingQuotes = [
     {
-        text: "84% of organizations struggle to manage cloud spend.",
+        text: "84% of organisations say managing cloud spend is their top cloud challenge.",
         source: "- Flexera, 2025 State of the Cloud",
     },
     {
@@ -88,8 +88,24 @@ const rotatingQuotes = [
     },
     {
         text: "59% of organizations now have a dedicated FinOps team.",
-        source: "Flexera, 2025 State of the Cloud",
+        source: "- Flexera, 2025 State of the Cloud",
     },
+    {
+        text: "43% of UK businesses reported a cyber breach or attack in the last 12 months.",
+        source: "- UK Cyber Security Breaches Survey 2025",
+    },
+    {
+        text: "97% of identity attacks were password spray attacks.",
+        source: "- Microsoft Digital Defense Report 2025",
+    },
+    {
+        text: "54% of cloud environments have exposed compute resources containing sensitive information.",
+        source: "- Wiz, Cloud Data Security Snapshot 2025",
+    },
+    {
+        text: "86% of recently compromised cloud instances were used for cryptocurrency mining.",
+        source: "- Google Cloud, Threat Horizons Report",
+    }
 ];
 
 let quoteIndex = 0;
