@@ -734,9 +734,6 @@ h4 {
 }
 
 .quote-rotator-mark-left {
-  /* position: absolute; */
-  /* top: 18px;
-  left: 22px; */
   position: relative;
   margin: 0;
   font-size: 3.4rem;
@@ -747,9 +744,6 @@ h4 {
 }
 
 .quote-rotator-mark-right {
-  /* position: absolute; */
-  /* top: 18px; */
-  /* right: 22px; */
   position: relative;
   margin: 0;
   font-size: 3.4rem;
