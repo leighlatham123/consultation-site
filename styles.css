@@ -149,6 +149,9 @@ hr {
 
 .brand-logo-nav {
   display: none;
+  width: 150px;
+  height: auto;
+  max-width: 150px;
 }
 
 .brand-text {
@@ -1502,11 +1505,16 @@ main {
       visibility 0s linear 0s;
   }
 
-  .nav-links.is-open .brand-logo-nav {
+  /* .nav-links.is-open .brand-logo-nav {
     display: block;
     width: 150px;
     height: auto;
     margin-bottom: 15px;
+  } */
+
+  .nav-links.is-open .brand-logo-nav:not([hidden]) {
+    display: block;
+    margin-bottom: 18px;
   }
 
   .nav-links a {
